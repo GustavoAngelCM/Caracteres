@@ -16,17 +16,16 @@ function contar(text)
   var all = 0;
   var letra = 0;
   var texto = text.split("");
-  console.log(texto);
   for (var i = 0; i < texto.length; i++)
   {
     if (texto[i].charCodeAt(0) != 32)
     {
-      console.log(texto[i]);
+      console.log(texto[i].charCodeAt(0));
       if (
         (texto[i].charCodeAt(0)>64 && texto[i].charCodeAt(0)<91) ||
         (texto[i].charCodeAt(0)>96 && texto[i].charCodeAt(0)<123) ||
-        (texto[i].charCodeAt(0)>127 && texto[i].charCodeAt(0)<166) ||
-        (texto[i].charCodeAt(0)>223 && texto[i].charCodeAt(0)<238)
+        (texto[i].charCodeAt(0)>191 && texto[i].charCodeAt(0)<247) ||
+        (texto[i].charCodeAt(0)>247 && texto[i].charCodeAt(0)<256)
       )
       {
         letra = letra + 1;
