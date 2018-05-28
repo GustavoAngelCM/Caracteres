@@ -8,6 +8,9 @@ function calcularCantidad()
     e.preventDefault();
     var texto = $('#texto').val();
     contar(texto);
+    $('html').animate({
+      scrollTop: $("#allCalc").offset().top
+    }, 2000);
   });
 }
 
