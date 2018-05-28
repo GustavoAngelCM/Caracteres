@@ -25,6 +25,7 @@ function contar(text)
     {
       console.log(texto[i].charCodeAt(0));
       if (
+        (texto[i].charCodeAt(0)>47 && texto[i].charCodeAt(0)<58) ||
         (texto[i].charCodeAt(0)>64 && texto[i].charCodeAt(0)<91) ||
         (texto[i].charCodeAt(0)>96 && texto[i].charCodeAt(0)<123) ||
         (texto[i].charCodeAt(0)>191 && texto[i].charCodeAt(0)<247) ||
